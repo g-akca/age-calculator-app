@@ -19,7 +19,7 @@ function InputDiv({
         id={label} 
         placeholder={placeholder} 
         {...register(label, validationRules)}
-        className={`border rounded-lg px-4 py-2 font-bold placeholder:text-black/50 ${hasError ? "border-red-400" : "border-grey-200"}`} 
+        className={`border rounded-lg px-4 py-2 font-bold caret-purple-500 placeholder:text-black/50 focus:outline-none ${hasError ? "border-red-400" : "border-grey-200"}`} 
       />
 
       {error && (!sharedDateError || showDateMessage) && (
