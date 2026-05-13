@@ -2,7 +2,7 @@ import arrowIcon from "/images/icon-arrow.svg";
 
 function DividerSection() {
   return (
-    <div className="grid grid-cols-[1fr_auto_1fr] items-center">
+    <div className="grid grid-cols-[1fr_auto_1fr] items-center desktop:grid-cols-[1fr_auto]">
       <div className="h-px bg-grey-200" aria-hidden />
 
       <button 
@@ -15,7 +15,7 @@ function DividerSection() {
         <img src={arrowIcon} alt="Arrow icon" className="w-6 aspect-square tablet:w-11" />
       </button>
 
-      <div className="h-px bg-grey-200" aria-hidden />
+      <div className="h-px bg-grey-200 desktop:hidden" aria-hidden />
     </div>
   )
 }

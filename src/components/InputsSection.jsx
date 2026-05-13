@@ -29,7 +29,7 @@ function InputsSection({ register, errors, getValues }) {
   const isDateError = errors.day?.type === "validate" || errors.month?.type === "validate" || errors.year?.type === "validate";
 
   return (
-    <div className="grid grid-cols-3 gap-4 tablet:gap-8">
+    <div className="grid grid-cols-3 gap-4 tablet:gap-8 desktop:grid-cols-[repeat(3,160px)]">
       <InputDiv
         label="day"
         placeholder="DD"

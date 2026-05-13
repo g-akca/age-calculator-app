@@ -46,7 +46,7 @@ function DateForm({ setResult }) {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit, onError)} className="flex flex-col gap-8">
+    <form onSubmit={handleSubmit(onSubmit, onError)} className="flex flex-col gap-8 desktop:gap-0">
       <InputsSection register={register} errors={errors} getValues={getValues} />
 
       <DividerSection />
