@@ -29,7 +29,7 @@ function InputsSection({ register, errors, getValues }) {
   const isDateError = errors.day?.type === "validate" || errors.month?.type === "validate" || errors.year?.type === "validate";
 
   return (
-    <div className="grid grid-cols-3 gap-4">
+    <div className="grid grid-cols-3 gap-4 tablet:gap-8">
       <InputDiv
         label="day"
         placeholder="DD"
@@ -66,8 +66,7 @@ function InputsSection({ register, errors, getValues }) {
           max: {
             value: 12,
             message: "Must be a valid month"
-          },
-          validate: validateDate
+          }
         }}
       />
 
@@ -78,8 +77,7 @@ function InputsSection({ register, errors, getValues }) {
         error={errors.year}
         sharedDateError={isDateError}
         validationRules={{
-          required: "This field is required",
-          validate: validateDate
+          required: "This field is required"
         }}
       />
     </div>

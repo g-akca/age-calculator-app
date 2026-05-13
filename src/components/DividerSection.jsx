@@ -7,9 +7,12 @@ function DividerSection() {
 
       <button 
         type="submit" 
-        className="w-16 aspect-square rounded-full bg-purple-500 flex justify-center items-center cursor-pointer transition-all duration-300 hover:bg-black"
+        className="
+          w-16 aspect-square rounded-full bg-purple-500 flex justify-center items-center 
+          cursor-pointer transition-all duration-300 hover:bg-black tablet:w-24
+        "
       >
-        <img src={arrowIcon} alt="Arrow icon" className="w-6 aspect-square" />
+        <img src={arrowIcon} alt="Arrow icon" className="w-6 aspect-square tablet:w-11" />
       </button>
 
       <div className="h-px bg-grey-200" aria-hidden />
